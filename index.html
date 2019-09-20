@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>Ben Brown</title>
+        
+        <style>
+
+        body {
+            margin:0px;
+            color:white;
+            background: url('alaska-vacation-pic.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+            height: 1450px;  
+        }
+
+        .footer {
+            overflow:hidden;
+            background-color: rgba(23, 71, 134, 0.85);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 500;
+        }
+        .footer a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer a:hover {
+            background: #ddd;
+            color: black;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: rgba(23, 71, 134, 0.85);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 500;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+        
+        .coolbttn {
+            background-color: DodgerBlue;
+            border-width: 1px;
+            border-color: black;
+            color: white;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 25px;
+            display: inline-block;
+            
+        }
+
+        .circleImg{
+            border-radius: 50%;
+            float:left;
+            position:relative;
+        }
+
+        .contact{
+            margin: 0px;
+            padding: 16px;
+            margin-top: 10px;
+            border-radius: 25px;
+            background-color: rgba(23, 112, 134, 0.85);
+            width: 170px;
+            height: 200px;
+            position:absolute;
+            top:50%;
+            left:95%;
+            margin-top:-50px; 
+            margin-left:-250px;
+        }
+
+        .languagelist{
+            margin: 0px;
+            padding: 16px;
+            margin-top:10px;
+            border-radius:25px;
+            background-color: rgba(23, 112, 134, 0.85);
+            width:200px;
+            position:absolute;
+            top: 50%;
+            left: 25%;
+            margin-top: -50px;
+            margin-left:-250px;
+        }
+
+        .musicList{
+            margin: 0px;
+            padding: 16px;
+            margin-top:10px;
+            border-radius:25px;
+            background-color: rgba(23, 112, 134, 0.85);
+            width:200px;
+            position:absolute;
+            top: 650px;
+            left: 25%;
+            margin-top: -50px;
+            margin-left:-250px;
+        }
+
+        .music{
+            margin: 0px;
+            padding: 16px;
+            margin-top:10px;
+            border-radius:25px;
+            background-color: rgba(23, 112, 134, 0.85);
+            width:450px;
+            position:absolute;
+            top: 1000px;
+            left: 50%;
+            margin-top: -50px;
+            margin-left:-250px;
+            height: 400px;
+        }
+
+        table{
+            color: #333;
+            font-family: Helvetica, Arial, sans-serif;
+            width: 300px;
+            border-collapse: collapse; border-spacing: 0; 
+        }
+
+        td, th {  border: 0 none; height: 30px; }
+                
+        th {
+            background: linear-gradient(rgb(39, 21, 141) 0%,rgb(18, 172, 126) 100%);
+            color: #FFF; font-weight: bold;
+            height: 40px;
+        }
+                
+        td { background: #FAFAFA; text-align: center; }
+
+                
+        tr:nth-child(even) td { background: #EEE; } 
+        tr:nth-child(odd) td { background: #FDFDFD; }
+
+        tr td:first-child, tr th:first-child { 
+            background: none; 
+            font-style: italic;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: right;
+            padding-right: 10px;
+            width: 30px; 
+        }
+
+        tr:first-child th:nth-child(2) { 
+        border-radius: 5px 0 0 0; 
+        } 
+
+        tr:first-child th:last-child { 
+        border-radius: 0 5px 0 0; 
+        }
+
+        .main {
+            margin: 0px;
+            padding: 16px;
+            margin-top: 10px;
+            border-radius: 25px;
+            background-color: rgba(23, 112, 134, 0.85);
+            width: 450px;
+            position:absolute;
+            top:25%;
+            left:50%;
+            margin-top:-50px;   
+            margin-left:-250px; 
+        }
+
+        .additionalInfo{
+            margin: 0px;
+            padding: 16px;
+            margin-top: 10px;
+            border-radius: 25px;
+            background-color: rgba(23, 112, 134, 0.85);
+            width: 300px;
+            height: 200px;
+            position:absolute;
+            top:575px;
+            left:90%;
+            margin-top:-50px;  
+            margin-left:-250px; 
+        }
+
+        .cat{
+            margin: 0px;
+            padding: 16px;
+            margin-top: 10px;
+            border-radius: 25px;
+            background-color: rgba(23, 112, 134, 0.85);
+            width: 300px;
+            position:absolute;
+            top:825px;
+            left:90%;
+            margin-top:-50px;  
+            margin-left:-250px; 
+        }
+
+        #interest{
+            text-align:center;
+        }
+
+        #aboutme{
+            text-align:center;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <img class="circleImg" src = "profile-pic.jpg" style = "width:50px; height:50px;">
+            <a href="index.html">Home</a>
+            <a href="yourchoice.html">Temperature Converter</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+
+        <div class = "footer">
+            <a href = "references.html">References</a>
+        </div>
+
+        <div class = "additionalInfo">
+            <h3 align = "center">Favorite BBQ in KC</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Restaurant Name</th>
+                        <th>Ranking</th>
+                        <th>Favorite Meal</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Q39</td>
+                        <td>1</td>
+                        <td>Burnt Ends</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Oklahoma Joe's</td>
+                        <td>2</td>
+                        <td>Ribs</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Gate's</td>
+                        <td>3</td>
+                        <td>Brisket</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class = "languagelist">
+            <h2>Programming Languages</h2>
+            <p>
+                Here are some of the programming languages I have experience in using
+            </p>
+            <ol type = 1>
+                <li>Java</li>
+                <li>C#</li>
+                <li>C++</li>
+                <li>HTML</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+            </ol>
+        </div>
+
+        <div class = "musicList">
+            <h2>My Music</h2>
+            <p>
+                This is a list of some of my favorite artists and bands
+            </p>
+            <ul>
+                <li>Porter Robinson</li>
+                <li>Illenium</li>
+                <li>Adventure Club</li>
+                <li>Travis Scott</li>
+                <li>Post Malone</li>
+                <li>Chevelle</li>
+            </ul>
+        </div>
+
+        <div class = "contact">
+            <h2>My Links:</h2>    
+            <aside>
+                Some of my accounts:
+                <br>
+                <button class = "coolbttn" onclick = "window.open('https://www.facebook.com','_blank')"><i class="fab fa-facebook fa-lg"></i></button>
+                <button class = "coolbttn" onclick = "window.open('https://www.youtube.com','_blank')"><i class="fab fa-youtube fa-lg"></i></button><br>
+                <button class = "coolbttn" onclick = "window.open('https://github.com/BenB049','_blank')"><i class="fab fa-github fa-lg"></i></button>
+                <button class = "coolbttn" onclick = "window.open('https://www.linkedin.com/in/benjamin-brown-0961b1170','_blank')"><i class="fab fa-linkedin-in fa-lg"></i></button>
+
+            </aside>
+        </div>
+
+        <div class="main">
+        <h1 id="aboutme"><u>About Me</u></h1>
+        <section>
+            <h3><i>Current:</i></h3>
+            <p>
+              I am a senior currently working on my Bachelors of Applied Computer Science
+              and this is my last semester before I graduate.            
+            </p>
+        </section>
+        
+        <section>
+            <h3><i>Background:</i></h3>
+            <p>
+              I am from Kansas City, Kansas and before I decided to continue my education
+              at NWMSU, I graduated from Johnson County Community College with an 
+              Associates Degree in Game Development. I enjoy making games but there 
+              aren't a lot of job opportunities in Kansas City for game development, so I 
+              decided to try and get my Bachelors degree in Computer Science in order to make 
+              it easier to get a job.            
+            </p>
+        </section>
+
+        <section>
+            <h3><i>Future:</i></h3>
+            <p>
+              One day I hope to get a job writing code but I'm not very picky about what kind 
+              of field of work it would be.  I would also be wiling to work in IT, databasing,  
+              or software development.            
+            </p>
+        </section>
+
+        </div>
+
+        <div class = "music">
+            <section>
+                <p>
+                    One of my favorite songs
+                </p>
+                <iframe width="440" height="315" src="https://www.youtube.com/embed/HQnC1UHBvWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </section>
+        </div>
+
+    </body>
+</html>
